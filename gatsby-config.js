@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pedro Pojo Personal`,
+    description: `Pedro Pojo, personal trainer especialista em emagrecimento consciente. Atua com consultoria online e presencial.`,
+    author: `Flatcode Social Media`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,17 +18,53 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pojo-personal`,
+        short_name: `Pojo Personal`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#749E92`,
+        theme_color: `#749E92`,
+        display: `minimal_ui`,
+        icon: `src/assets/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        tailwind: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto Mono`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin`],
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'UA-160182835-1',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'pojopersonal.com',
+      },
+    },
   ],
 }
