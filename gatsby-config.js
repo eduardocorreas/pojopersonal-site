@@ -66,5 +66,11 @@ module.exports = {
         cookieDomain: 'pojopersonal.com',
       },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '348363412718037',
+      },
+    },
   ],
 }
