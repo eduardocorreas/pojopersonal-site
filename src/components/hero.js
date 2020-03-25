@@ -44,7 +44,7 @@ export default function hero() {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/pojopersonal"
+                  href="https://www.instagram.com/pojopersonaloficial"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
