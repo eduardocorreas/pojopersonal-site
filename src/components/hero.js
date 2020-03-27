@@ -1,13 +1,8 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 import bgHero from '../images/bgHero-desktop.png'
 import Header from './header'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faFacebook,
-  faInstagram,
-  faTelegram,
-} from '@fortawesome/free-brands-svg-icons'
+import SocialIcons from '../components/socialIcons'
 
 export default function hero() {
   return (
@@ -26,53 +21,24 @@ export default function hero() {
             <div class="md:w-1/2 w-full">
               <h2 class="leading-none  text-2xl  xs:text-4xl md:text-4xl lg:6x1 uppercase">
                 Ajudo pessoas como você <br />
-                <span class="text-green-400">a emagrecerem de verdade</span>
+                <span class="text-green-400">a transformarem suas vidas</span>
+                <br />
+                <span class="text-white">Apenas mudando seus hábitos</span>
               </h2>
               <p class="mt-12 mb-12 uppercase">
                 Sou <span class="text-green-400">Pedro Pojo</span>, especialista
                 em emagrecimento consciente
               </p>
-              <div className="mx-auto flex justify-center mb-10">
-                <a
-                  href="https://www.facebook.com/pedro.pojo.714"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faFacebook}
-                    className="text-3xl mr-5"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/pojopersonaloficial"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="text-3xl mr-5"
-                  />
-                </a>
-                <a
-                  href="https://t.me/joinchat/AAAAAExph9Lf4W8dNo8x-Q"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faTelegram}
-                    className="text-3xl mr-5"
-                  />
-                </a>
-              </div>
-              <a
-                href="https://mailchi.mp/3b89aa3df3e1/pojopersonal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+
+              <Link to="/ebook-mudanca-de-habito">
                 <button class="px-4 rounded-full bg-green-400 text-white font-bold p-4 uppercase border-blue-500 border">
-                  Receba conteúdos exclusivos sobre emagrecimento
+                  Receba agora o ebook com os 4 Pilares que ajudaram mais de 30
+                  alunos a transformarem suas vidas
                 </button>
-              </a>
+              </Link>
+              <div className="mt-10">
+                <SocialIcons />
+              </div>
             </div>
           </div>
         </section>
