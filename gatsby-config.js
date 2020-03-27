@@ -72,5 +72,12 @@ module.exports = {
         pixelId: '348363412718037',
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://pojopersonal.us19.list-manage.com/subscribe/post?u=31636fa43c0248e85123e0d93&amp;id=51f8f5b8c7', // add your MC list endpoint here; see instructions below
+      },
+    },
   ],
 }
