@@ -14,17 +14,6 @@ const Layout = ({ children }) => {
     <>
       <div>
         <main>{children}</main>
-        <footer className="text-center bg-gray-900 text-gray-500 pb-3">
-          © {new Date().getFullYear()} Desenvolvido por
-          {` `}
-          <a
-            href="https://www.flatcodesm.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Flatcode
-          </a>
-        </footer>
       </div>
     </>
   )
