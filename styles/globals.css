@@ -1,0 +1,32 @@
+:root {
+  --cor-primaria: #9ce5d5;
+  --cor-secundaria: #bcbcbe;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Graduate", sans-serif;
+  background-color: black !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100vh;
+  background: url("../public/pedro-hero.png"), #000;
+  background-position: left, left;
+  background-size: cover;
+}
